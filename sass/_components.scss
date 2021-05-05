@@ -1,0 +1,209 @@
+.section-social-proof {
+    max-width: 111.1rem;
+    width: 100%;
+    height: 57.5rem;
+}   
+
+.rating {
+    display: flex;
+    min-height: 50%;
+
+    @media only screen and (max-width: $bp-large) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__description {
+        flex: 0 0 50%;
+        padding-right: 7.4rem;
+
+        @media only screen and (max-width: $bp-large) {
+            padding: 0;
+        }
+    }
+
+    &__stars {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        @media only screen and (max-width: $bp-large) {
+            & > div {
+                margin: 10px 0;
+            }
+        }
+
+        &--feature {
+            background-color: #f7f2f8;
+            width: 83%;
+            height: 6rem;
+            padding: 0 0 0 35px;
+            border-radius: 1rem;
+
+            display: flex;
+            align-items: center;
+
+            @media only screen and (max-width: $bp-large) {
+                width: 100%;
+            }
+
+            &-2 {
+                margin-left: 5rem;
+                padding: 0;
+    
+            }
+            
+            &-3 {
+                margin-left: 10rem;
+                padding: 0;
+            }
+        }
+
+        &-icon {
+            display: inline-block;
+            background-image: url(../img/icon-star.svg);
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        &-detail {
+            color: var(--color-primary-very-dark-magenta);
+            font-size: 13px;
+            font-weight: 700;
+            margin-left: 18px;
+            display: inline-block
+        }
+    }
+}
+
+/* || Typography */
+
+.heading {
+    font-size: 4.5rem;
+    color: var(--color-primary-very-dark-magenta);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.paragraph {
+    color: var(--color-dark-grayish-agenta);
+    line-height: 2.5rem;
+    font-weight: 500;
+}
+
+/* || User reviews */
+
+.user-reviews {
+    display: flex;
+    margin-top: 3.5rem;
+
+    & > *:not(:last-child) {
+        margin-right: 3rem;
+
+        @media only screen and (max-width: $bp-large) {
+            margin-right: 0;
+        }
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        flex-direction: column;
+        
+    }
+}
+
+.review {
+    max-width: 35rem;
+    background-color: var(--color-primary-very-dark-magenta);
+    height: 20%;
+    border-radius: 1rem;
+    padding: 4rem 2.8rem;
+
+    @media only screen and (max-width: $bp-large) {
+        max-width: 100%;
+    }
+
+    &-2 {
+        margin-top: 1.5rem;
+    }
+    
+    &-3 {
+        margin-top: 3rem;
+
+        @media only screen and (max-width: $bp-large) {
+            margin-top: 2rem;
+        }
+    }
+
+    &__user {
+        
+        display: flex;
+        
+        &-box {
+            height: 5rem;
+            margin-left: 2rem;
+        }
+
+        &--name {
+            color: var(--color--white);
+            font-weight: 700;
+            margin-bottom: .5rem;
+            font-size: 1.3rem;
+        }
+    
+        &--status {
+            color: var(--color-primary-soft-pink);
+            font-size: 1.3rem;
+        }
+    }
+
+    &__photo {
+        border-radius: 50%;
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    &__text {
+        margin-top: 2rem;
+        color: var(--color--white);
+        font-size: 1.3rem;
+        line-height: 2.1rem;
+        font-weight: 500;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
