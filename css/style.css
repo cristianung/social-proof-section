@@ -24,8 +24,8 @@ body {
   font-family: 'Spartan', sans-serif;
   background-image: url(../img/bg-pattern-top-desktop.svg), url(../img/bg-pattern-bottom-desktop.svg);
   background-repeat: no-repeat;
-  background-position: 16.28vw 0vh, 35vw 31vh;
-  background-size: 30% 42%, auto;
+  background-position: 16.28vw 0vh, 24vw;
+  background-size: 30% 42%, cover;
   padding: 5rem 3rem;
   display: flex;
   justify-content: center;
@@ -135,6 +135,8 @@ body {
     || MEDIA QUERIES
 */
 @media only screen and (max-width: 66.62em) {
+  body {
+    background-image: url(../img/bg-pattern-top-mobile.svg), url(../img/bg-pattern-bottom-mobile.svg); }
   .rating {
     flex-direction: column;
     text-align: center; }
