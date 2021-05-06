@@ -38,7 +38,7 @@ Mobile:
 
 ### Links
 
-- Solution URL: [Click here!]()
+- Solution URL: [Click here!](https://www.frontendmentor.io/solutions/social-proof-section-u9ceNWmgn)
 - Live Site URL: [Click here!](https://stupefied-heisenberg-949ad2.netlify.app/)
 
 ## My process
