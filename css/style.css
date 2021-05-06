@@ -19,54 +19,45 @@ html {
   font-size: 62.5%; }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-size: 1.5rem;
   font-family: 'Spartan', sans-serif;
   background-image: url(../img/bg-pattern-top-desktop.svg), url(../img/bg-pattern-bottom-desktop.svg);
   background-repeat: no-repeat;
-  background-position: 16.28vw 0vh, 34vw 32vh;
-  padding: 13rem 16.8rem;
+  background-position: 16.28vw 0vh, 35vw 31vh;
+  background-size: 30% 42%, auto;
+  padding: 5rem 3rem;
   display: flex;
   justify-content: center;
   align-items: center; }
 
+/* 
+    || SOCIAL PROOF SECTION
+*/
 .section-social-proof {
   max-width: 111.1rem;
   width: 100%;
-  height: 57.5rem; }
+  min-height: 57.5rem; }
 
 .rating {
   display: flex;
   min-height: 50%; }
-  @media only screen and (max-width: 66.62em) {
-    .rating {
-      flex-direction: column;
-      text-align: center; } }
   .rating__description {
     flex: 0 0 50%;
     padding-right: 7.4rem; }
-    @media only screen and (max-width: 66.62em) {
-      .rating__description {
-        padding: 0; } }
   .rating__stars {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; }
-    @media only screen and (max-width: 66.62em) {
-      .rating__stars > div {
-        margin: 10px 0; } }
     .rating__stars--feature {
       background-color: #f7f2f8;
       width: 83%;
       height: 6rem;
-      padding: 0 0 0 35px;
+      padding: 0 0 0 3.5rem;
       border-radius: 1rem;
       display: flex;
       align-items: center; }
-      @media only screen and (max-width: 66.62em) {
-        .rating__stars--feature {
-          width: 100%; } }
       .rating__stars--feature-2 {
         margin-left: 5rem;
         padding: 0; }
@@ -77,14 +68,14 @@ body {
       display: inline-block;
       background-image: url(../img/icon-star.svg);
       background-repeat: no-repeat;
-      width: 20px;
-      height: 20px;
-      margin-right: 5px; }
+      width: 2rem;
+      height: 2rem;
+      margin-right: .5rem; }
     .rating__stars-detail {
       color: var(--color-primary-very-dark-magenta);
-      font-size: 13px;
+      font-size: 1.3rem;
       font-weight: 700;
-      margin-left: 18px;
+      margin-left: 1.8rem;
       display: inline-block; }
 
 /* || Typography */
@@ -102,15 +93,9 @@ body {
 /* || User reviews */
 .user-reviews {
   display: flex;
-  margin-top: 3.5rem; }
+  margin-top: 6rem; }
   .user-reviews > *:not(:last-child) {
     margin-right: 3rem; }
-    @media only screen and (max-width: 66.62em) {
-      .user-reviews > *:not(:last-child) {
-        margin-right: 0; } }
-  @media only screen and (max-width: 66.62em) {
-    .user-reviews {
-      flex-direction: column; } }
 
 .review {
   max-width: 35rem;
@@ -118,16 +103,10 @@ body {
   height: 20%;
   border-radius: 1rem;
   padding: 4rem 2.8rem; }
-  @media only screen and (max-width: 66.62em) {
-    .review {
-      max-width: 100%; } }
   .review-2 {
     margin-top: 1.5rem; }
   .review-3 {
     margin-top: 3rem; }
-    @media only screen and (max-width: 66.62em) {
-      .review-3 {
-        margin-top: 2rem; } }
   .review__user {
     display: flex; }
     .review__user-box {
@@ -136,7 +115,7 @@ body {
     .review__user--name {
       color: var(--color--white);
       font-weight: 700;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       font-size: 1.3rem; }
     .review__user--status {
       color: var(--color-primary-soft-pink);
@@ -151,3 +130,31 @@ body {
     font-size: 1.3rem;
     line-height: 2.1rem;
     font-weight: 500; }
+
+/* 
+    || MEDIA QUERIES
+*/
+@media only screen and (max-width: 66.62em) {
+  .rating {
+    flex-direction: column;
+    text-align: center; }
+    .rating__description {
+      padding: 0; }
+    .rating__stars {
+      margin-top: 3rem; }
+      .rating__stars > div {
+        margin: 1rem 0; }
+      .rating__stars--feature {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center; }
+  .heading {
+    font-size: 3.5rem; }
+  .user-reviews {
+    flex-direction: column; }
+    .user-reviews > *:not(:last-child) {
+      margin-right: 0; }
+  .review {
+    max-width: 100%; }
+    .review-3 {
+      margin-top: 2rem; } }

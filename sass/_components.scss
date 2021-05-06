@@ -1,25 +1,20 @@
+/* 
+    || SOCIAL PROOF SECTION
+*/
+
 .section-social-proof {
     max-width: 111.1rem;
     width: 100%;
-    height: 57.5rem;
-}   
+    min-height: 57.5rem;
+}
 
 .rating {
     display: flex;
     min-height: 50%;
 
-    @media only screen and (max-width: $bp-large) {
-        flex-direction: column;
-        text-align: center;
-    }
-
     &__description {
         flex: 0 0 50%;
         padding-right: 7.4rem;
-
-        @media only screen and (max-width: $bp-large) {
-            padding: 0;
-        }
     }
 
     &__stars {
@@ -28,32 +23,21 @@
         flex-direction: column;
         justify-content: space-evenly;
 
-        @media only screen and (max-width: $bp-large) {
-            & > div {
-                margin: 10px 0;
-            }
-        }
-
         &--feature {
             background-color: #f7f2f8;
             width: 83%;
             height: 6rem;
-            padding: 0 0 0 35px;
+            padding: 0 0 0 3.5rem;
             border-radius: 1rem;
 
             display: flex;
             align-items: center;
 
-            @media only screen and (max-width: $bp-large) {
-                width: 100%;
-            }
-
             &-2 {
                 margin-left: 5rem;
                 padding: 0;
-    
             }
-            
+
             &-3 {
                 margin-left: 10rem;
                 padding: 0;
@@ -64,17 +48,17 @@
             display: inline-block;
             background-image: url(../img/icon-star.svg);
             background-repeat: no-repeat;
-            width: 20px;
-            height: 20px;
-            margin-right: 5px;
+            width: 2rem;
+            height: 2rem;
+            margin-right: .5rem;
         }
 
         &-detail {
             color: var(--color-primary-very-dark-magenta);
-            font-size: 13px;
+            font-size: 1.3rem;
             font-weight: 700;
-            margin-left: 18px;
-            display: inline-block
+            margin-left: 1.8rem;
+            display: inline-block;
         }
     }
 }
@@ -98,20 +82,9 @@
 
 .user-reviews {
     display: flex;
-    margin-top: 3.5rem;
+    margin-top: 6rem;
 
-    & > *:not(:last-child) {
-        margin-right: 3rem;
-
-        @media only screen and (max-width: $bp-large) {
-            margin-right: 0;
-        }
-    }
-
-    @media only screen and (max-width: $bp-large) {
-        flex-direction: column;
-        
-    }
+    & > *:not(:last-child) { margin-right: 3rem; }
 }
 
 .review {
@@ -121,26 +94,13 @@
     border-radius: 1rem;
     padding: 4rem 2.8rem;
 
-    @media only screen and (max-width: $bp-large) {
-        max-width: 100%;
-    }
+    &-2 { margin-top: 1.5rem; }
 
-    &-2 {
-        margin-top: 1.5rem;
-    }
-    
-    &-3 {
-        margin-top: 3rem;
-
-        @media only screen and (max-width: $bp-large) {
-            margin-top: 2rem;
-        }
-    }
+    &-3 { margin-top: 3rem; }
 
     &__user {
-        
         display: flex;
-        
+
         &-box {
             height: 5rem;
             margin-left: 2rem;
@@ -149,10 +109,10 @@
         &--name {
             color: var(--color--white);
             font-weight: 700;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
             font-size: 1.3rem;
         }
-    
+
         &--status {
             color: var(--color-primary-soft-pink);
             font-size: 1.3rem;
@@ -174,36 +134,41 @@
     }
 }
 
+/* 
+    || MEDIA QUERIES
+*/
 
+@media only screen and (max-width: $bp-large) {
+    .rating {
+        flex-direction: column;
+        text-align: center;
 
+        &__description { padding: 0;}
 
+        &__stars {
+            margin-top: 3rem;
 
+            & > div { margin: 1rem 0;}
 
+            &--feature {
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
 
+    .heading { font-size: 3.5rem; }
 
+    .user-reviews {
+        flex-direction: column;
 
+        & > *:not(:last-child) { margin-right: 0; }
+    }
 
+    .review {
+        max-width: 100%;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        &-3 { margin-top: 2rem; }
+    }
+}
